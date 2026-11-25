@@ -54,21 +54,23 @@ ul{
     border-radius: 5%;
     width: 100%;
     text-align: center;
+    margin-top: 20px;
 }
 
 .event-name{
-    font-weight: bold;
+    font-size: 1.5em;
     margin-top: 20px;
 }
 
 .register-btn{
-    font-weight: bold;
+    font-weight: 550;
 }
 
 .event-description{
     margin-bottom: 10px;
+    min-height: 3rem;
 }
 
-.event-height{
-    height: 200px;
+.start-time{
+   min-height: 3rem;
 }
