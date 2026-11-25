@@ -26,24 +26,28 @@ ul{
     width: 100%;
     color: #fff;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    font-size: 1.2em;
 }
 
 #page-title{
-    border: 2px nnone;
+    border: 2px none;
     text-align: center;
     text-decoration: underline;
     margin-bottom: 0;
     color: #fff;
 }
 
-#upcoming-events{
+#upcoming-events{ 
     text-align: center;
-    margin: 0 auto;
     border: 2px solid #000;
     border-radius: 5%;
-    width: 100%;
     padding: 0 20px;
-}
+    
+ }
+
+ #event-list{
+    margin-bottom:20px;
+ }
 
 #past-events{
     border: 2px solid #000;
@@ -54,13 +58,17 @@ ul{
 
 .event-name{
     font-weight: bold;
-    margin-top: 10px;
+    margin-top: 20px;
 }
 
 .register-btn{
     font-weight: bold;
 }
 
-.event-discription{
+.event-description{
     margin-bottom: 10px;
+}
+
+.event-height{
+    height: 200px;
 }
