@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.9/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-yEPZ7jP9S0QKiUQ0m3jjsO4ProIW7wvR9gXkI7JOGa2XVsw53Yke2bsdkBbjmmiX" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Community Events</title>
+</head>
+<body>
+    <header id="header">
+        <h1 id="page-title">Welcome to Our Community Events</h1>
+            <section id="discription">
+                <p>Join us in celebrating and participating in various community events. Stay updated with upcoming events, explore past events, and submit your own events to be featured on our platform.</p>
+            </section>
+    </header>
+    <main>
+        <section class="" id="upcoming-events">
+            <h2>Upcoming Events</h2>
+            <ul>
+                <li class="event-name">Community Picnic - June 15, 2024</li>
+                <li class="event-description"> A group meeting for people interested in community development</li>
+                <li><button class="btn btn-info register-btn" type="register"> register for the event</button></li>
+                <li class="event-name">Charity Run - July 10, 2024</li>
+                <li class="event-description"> A charity run to raise funds for local schools</li>
+                <li><button class="btn btn-info register-btn" type="register"> register for the event</button></li>
+                <li class="event-name">Art Workshop - August 5, 2024</li>
+                <li class="event-description"> A workshop to learn various art techniques</li>
+                <li><button class="btn btn-info register-btn" type="register"> register for the event</button></li>
+            </ul>
+        </section>
+
+        <section id="past-events">
+            <h2>Past Events</h2>
+            <ul>
+                <li class="event-name">Spring Festival - April 20, 2024</li>
+                <li class="event-description"> A festival celebrating the arrival of spring with various activities</li>
+                <li class="event-name">Music Concert - May 12, 2024</li>
+                <li class="event-description"> A live music concert featuring local bands</li>
+            </ul>
+        </section>
+
+        <section id="event-submission">
+            <h2>Submit Your Event</h2>
+            <form action="/submit-event" method="POST">
+                <label for="event-name">Event Name:</label>
+                <input type="text" id="event-name" name="event-name" required>
+
+                <label for="event-date">Event Date:</label>
+                <input type="date" id="event-date" name="event-date" required>
+
+                <label for="event-description">Event Description:</label>
+                <textarea id="event-description" name="event-description" required></textarea>
+
+                <button type="submit">Submit Event</button>
+            </form>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>If you have any questions or need more information about an event, please reach out to us</p>
+            <form action="/contact" method="POST">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Your Message:</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.9/dist/js/bootstrap.min.
+    js" integrity="sha384-89aa4glufciPv46aKltztWQEmk+Tu9W2RhzXr6VcnUUEub7F8+06RcL2RYLCOHUq"
+     crossorigin="anonymous"></script>
+</body>
+</html>
